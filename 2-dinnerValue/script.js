@@ -10,7 +10,11 @@
 
 const totalDinnerValue = (price, rate) => {
   const waiterFee = rate / 100;
-  return price + price * waiterFee;
+  console.log(
+    `O preço total do jantar foi R$ ${price + price * waiterFee}.00 com R$ ${
+      price * waiterFee
+    }.00 de taxa.`
+  );
 };
 
-console.log(`O preço total do jantar foi R$ ${totalDinnerValue(120, 10)}.`);
+totalDinnerValue(120, 10);
